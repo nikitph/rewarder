@@ -1,4 +1,4 @@
-![Reward Is Not Reinforcement Until Admitted infographic](assets/reward-admission-infographic.svg)
+![Reward Is Not Reinforcement Until Admitted infographic](assets/img.png)
 
 # Governed Reward Experiment
 
