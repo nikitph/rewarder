@@ -1,3 +1,5 @@
+![Reward Is Not Reinforcement Until Admitted infographic](assets/reward-admission-infographic.svg)
+
 # Governed Reward Experiment
 
 Minimal runnable experiment for the thesis:
