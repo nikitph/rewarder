@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="300" viewBox="0 0 980 300">
+<style>
+text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #1f2933; }
+.title { font-size: 22px; font-weight: 700; }
+.subtitle { font-size: 13px; fill: #5f6b7a; }
+.label { font-size: 12px; }
+.small { font-size: 11px; fill: #5f6b7a; }
+.axis { stroke: #1f2933; stroke-width: 1; }
+.grid { stroke: #d8dde6; stroke-width: 1; }
+</style>
+<text x="40.0" y="38.0" class="title" text-anchor="start">Figure 1. Governed reward inserts an admission layer between observation and learning</text>
+<text x="40.0" y="62.0" class="subtitle" text-anchor="start">Raw reward is treated as a claim about action quality, not as authoritative reinforcement.</text>
+<rect x="40" y="115" width="130" height="76" rx="8" fill="#ffffff" stroke="#8fa2b7" stroke-width="2"/>
+<text x="105.0" y="145.0" class="label" text-anchor="middle">State</text>
+<text x="105.0" y="168.0" class="small" text-anchor="middle">s_t</text>
+<line x1="170" y1="153.0" x2="190" y2="153.0" stroke="#66788a" stroke-width="2"/>
+<polygon points="190,153.0 182,148.0 182,158.0" fill="#66788a"/>
+<rect x="198" y="115" width="130" height="76" rx="8" fill="#ffffff" stroke="#8fa2b7" stroke-width="2"/>
+<text x="263.0" y="145.0" class="label" text-anchor="middle">Action</text>
+<text x="263.0" y="168.0" class="small" text-anchor="middle">a_t</text>
+<line x1="328" y1="153.0" x2="348" y2="153.0" stroke="#66788a" stroke-width="2"/>
+<polygon points="348,153.0 340,148.0 340,158.0" fill="#66788a"/>
+<rect x="356" y="115" width="130" height="76" rx="8" fill="#fff4f4" stroke="#c43b3b" stroke-width="2"/>
+<text x="421.0" y="145.0" class="label" text-anchor="middle">Raw reward</text>
+<text x="421.0" y="168.0" class="small" text-anchor="middle">claim r_t</text>
+<line x1="486" y1="153.0" x2="506" y2="153.0" stroke="#66788a" stroke-width="2"/>
+<polygon points="506,153.0 498,148.0 498,158.0" fill="#66788a"/>
+<rect x="514" y="115" width="130" height="76" rx="8" fill="#effaf4" stroke="#237a57" stroke-width="2"/>
+<text x="579.0" y="145.0" class="label" text-anchor="middle">Reward governor</text>
+<text x="579.0" y="168.0" class="small" text-anchor="middle">constraints, causal, temporal, epistemic checks</text>
+<line x1="644" y1="153.0" x2="664" y2="153.0" stroke="#66788a" stroke-width="2"/>
+<polygon points="664,153.0 656,148.0 656,158.0" fill="#66788a"/>
+<rect x="672" y="115" width="130" height="76" rx="8" fill="#eef6ff" stroke="#3d6fb6" stroke-width="2"/>
+<text x="737.0" y="145.0" class="label" text-anchor="middle">Admitted reward</text>
+<text x="737.0" y="168.0" class="small" text-anchor="middle">r-hat_t, status, audit trace</text>
+<line x1="802" y1="153.0" x2="822" y2="153.0" stroke="#66788a" stroke-width="2"/>
+<polygon points="822,153.0 814,148.0 814,158.0" fill="#66788a"/>
+<rect x="830" y="115" width="130" height="76" rx="8" fill="#ffffff" stroke="#8fa2b7" stroke-width="2"/>
+<text x="895.0" y="145.0" class="label" text-anchor="middle">Policy update</text>
+<text x="895.0" y="168.0" class="small" text-anchor="middle">only admitted signals</text>
+<text x="520.0" y="230.0" class="subtitle" text-anchor="middle">No raw success may reinforce invariant violation.</text>
+</svg>

@@ -1,0 +1,116 @@
+# Governed Reward Experiment
+
+Minimal runnable experiment for the thesis:
+
+> Reward is not reinforcement until admitted.
+
+The experiment uses a ranking-only setup rather than model fine-tuning. Each
+synthetic coding task receives several candidate patch outcomes. A raw selector
+chooses the patch with the highest raw reward, while a governed selector chooses
+the patch with the highest admitted reward after invariant, exploit, causal,
+hidden-test, and delayed-regression checks.
+
+## Run
+
+```bash
+python3 governed_reward_experiment.py
+```
+
+Optional parameters:
+
+```bash
+python3 governed_reward_experiment.py --tasks 100 --candidates 7 --seed 11
+```
+
+Run the multi-seed selector and ablation suite:
+
+```bash
+python3 governed_reward_experiment.py \
+  --suite \
+  --tasks 100 \
+  --seed-start 10 \
+  --seed-end 30 \
+  --candidate-grid 3,5,7,10 \
+  --out results/governed_reward_suite.json \
+  --report results/governed_reward_suite_report.md
+```
+
+Run the executable real-code benchmark:
+
+```bash
+python3 real_codebase_experiment.py
+```
+
+Run the real-code benchmark with DeepSeek-generated patches:
+
+```bash
+read -rs DEEPSEEK_API_KEY
+export DEEPSEEK_API_KEY
+python3 real_codebase_experiment.py \
+  --generator deepseek \
+  --model deepseek-chat \
+  --llm-candidates 12 \
+  --out results/deepseek_real_codebase_results_12.json \
+  --report results/deepseek_real_codebase_report_12.md
+```
+
+## Outputs
+
+- `results/governed_reward_results.json`: full task, candidate, selector, and
+  audit-trace data.
+- `results/governed_reward_report.md`: compact metrics report.
+- `results/governed_reward_suite.json`: multi-seed selector and ablation data.
+- `results/governed_reward_suite_report.md`: mean, standard deviation, 95%
+  confidence interval, and paired effect-size summary.
+- `results/real_codebase_results.json`: executable benchmark results from
+  applying candidate patches to temporary Python packages and running tests.
+- `results/real_codebase_report.md`: compact real-code benchmark report.
+- `results/deepseek_real_codebase_results_12.json`: real-code benchmark using
+  DeepSeek-generated candidate patches.
+- `results/deepseek_real_codebase_report_12.md`: compact report for the
+  DeepSeek-generated patch run.
+
+## Compared Selectors
+
+- `RawSelector = argmax(raw_reward)`
+- `WeightedScalarSelector = argmax(weighted_scalar_reward)`
+- `GovernedSelector = argmax(admitted_reward)`
+- `OracleSelector = argmax(known_ground_truth_quality)`
+- `LargerDiffSelector = argmax(diff_size)`
+
+Raw reward uses visible tests, typecheck, lint, and build.
+
+Governed reward applies hard overrides for test weakening, hardcoding, security
+violations, secrets, architecture violations, and public API breaks. Soft checks
+discount hidden-test failure, large diffs, weak causal attribution, unnecessary
+dependencies, and delayed regressions.
+
+## Headline Metrics
+
+The report compares:
+
+- visible test pass rate
+- hidden test pass rate
+- reward hacking rate
+- hard invariant violation rate
+- architecture violation rate
+- delayed regression rate
+- security regression rate
+- public API break rate
+- diff size
+- maintainability
+- causal score
+- raw and admitted reward
+- hidden-test pass per changed line
+- robustness per diff size
+
+## Ablations
+
+The suite compares full governance against removing:
+
+- hard invariant filter
+- exploit detector
+- hidden test evidence
+- delayed regression evidence
+- causal attribution
+- maintainability discount

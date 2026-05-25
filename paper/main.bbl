@@ -1,0 +1,52 @@
+\begin{thebibliography}{6}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Freire et~al.(2023)Freire, Abreu, Cruz, and Wichert]{goodhart2023}
+Pedro Freire, Miguel Abreu, Francisco Cruz, and Andreas Wichert.
+\newblock Goodhart's law in reinforcement learning.
+\newblock \emph{arXiv preprint arXiv:2310.09144}, 2023.
+\newblock URL \url{https://arxiv.org/abs/2310.09144}.
+
+\bibitem[Jimenez et~al.(2024)Jimenez, Yang, Wettig, Yao, Pei, Press, and
+  Narasimhan]{swebench2024}
+Carlos~E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir
+  Press, and Karthik Narasimhan.
+\newblock Swe-bench: Can language models resolve real-world github issues?
+\newblock In \emph{International Conference on Learning Representations}, 2024.
+\newblock URL \url{https://github.com/SWE-bench/SWE-bench}.
+
+\bibitem[Krakovna et~al.(2020)Krakovna, Uesato, Mikulik, Rahtz, Everitt, Kumar,
+  Kenton, and Leike]{specgaming2020}
+Victoria Krakovna, Jonathan Uesato, Vladimir Mikulik, Matthew Rahtz, Tom
+  Everitt, Ramana Kumar, Zac Kenton, and Jan Leike.
+\newblock Specification gaming: The flip side of ai ingenuity, 2020.
+\newblock URL
+  \url{https://deepmind.google/discover/blog/specification-gaming-the-flip-side-of-ai-ingenuity/}.
+
+\bibitem[Langosco et~al.(2022)Langosco, Koch, Sharkey, Pfau, and
+  Krueger]{goalmisgeneralization2022}
+Lauro Langosco~Di Langosco, Jack Koch, Lee~D. Sharkey, Jacob Pfau, and David
+  Krueger.
+\newblock Goal misgeneralization in deep reinforcement learning.
+\newblock In \emph{International Conference on Machine Learning}, 2022.
+\newblock URL \url{https://arxiv.org/abs/2105.14111}.
+
+\bibitem[Li et~al.(2022)Li, Choi, Chung, Kushman, Schrittwieser, Leblond,
+  Eccles, Keeling, Gimeno, Dal~Lago, et~al.]{alphacode2022}
+Yujia Li, David Choi, Junyoung Chung, Nate Kushman, Julian Schrittwieser, Remi
+  Leblond, Tom Eccles, James Keeling, Felix Gimeno, Agustin Dal~Lago, et~al.
+\newblock Competition-level code generation with alphacode.
+\newblock \emph{arXiv preprint arXiv:2203.07814}, 2022.
+\newblock URL \url{https://arxiv.org/abs/2203.07814}.
+
+\bibitem[{OpenAI}(2024)]{swebenchverified2024}
+{OpenAI}.
+\newblock Introducing swe-bench verified, 2024.
+\newblock URL \url{https://openai.com/index/introducing-swe-bench-verified/}.
+\newblock Accessed 2026-05-25.
+
+\end{thebibliography}

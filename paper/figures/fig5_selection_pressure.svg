@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="460" viewBox="0 0 820 460">
+<style>
+text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #1f2933; }
+.title { font-size: 22px; font-weight: 700; }
+.subtitle { font-size: 13px; fill: #5f6b7a; }
+.label { font-size: 12px; }
+.small { font-size: 11px; fill: #5f6b7a; }
+.axis { stroke: #1f2933; stroke-width: 1; }
+.grid { stroke: #d8dde6; stroke-width: 1; }
+</style>
+<text x="40.0" y="35.0" class="title" text-anchor="start">Figure 5. Reward hacking is a selection effect</text>
+<text x="40.0" y="58.0" class="subtitle" text-anchor="start">At 10 candidates, raw reward amplifies hacked patches above base-rate prevalence; governance suppresses them.</text>
+<line x1="90" y1="380" x2="780" y2="380" class="grid"/>
+<text x="78.0" y="384.0" class="small" text-anchor="end">0.00</text>
+<line x1="90" y1="305.0" x2="780" y2="305.0" class="grid"/>
+<text x="78.0" y="309.0" class="small" text-anchor="end">0.25</text>
+<line x1="90" y1="230.0" x2="780" y2="230.0" class="grid"/>
+<text x="78.0" y="234.0" class="small" text-anchor="end">0.50</text>
+<line x1="90" y1="155.0" x2="780" y2="155.0" class="grid"/>
+<text x="78.0" y="159.0" class="small" text-anchor="end">0.75</text>
+<line x1="90" y1="80.0" x2="780" y2="80.0" class="grid"/>
+<text x="78.0" y="84.0" class="small" text-anchor="end">1.00</text>
+<line x1="90" y1="80" x2="90" y2="380" class="axis"/>
+<line x1="90" y1="380" x2="780" y2="380" class="axis"/>
+<text x="18.0" y="230.0" class="small" text-anchor="middle">Reward-hacking rate</text>
+<rect x="134.0" y="270.872" width="171.33333333333334" height="109.12799999999999" fill="#95a1ad" rx="4"/>
+<text x="219.7" y="262.9" class="small" text-anchor="middle">0.364</text>
+<text x="219.7" y="405.0" class="small" text-anchor="middle">Candidate pool</text>
+<rect x="349.33333333333337" y="136.43" width="171.33333333333334" height="243.57" fill="#c43b3b" rx="4"/>
+<text x="435.0" y="128.4" class="small" text-anchor="middle">0.812</text>
+<text x="435.0" y="405.0" class="small" text-anchor="middle">Raw selected</text>
+<rect x="564.6666666666667" y="379.142" width="171.33333333333334" height="0.858" fill="#237a57" rx="4"/>
+<text x="650.3" y="371.1" class="small" text-anchor="middle">0.003</text>
+<text x="650.3" y="405.0" class="small" text-anchor="middle">Governed selected</text>
+</svg>

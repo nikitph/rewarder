@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="460" viewBox="0 0 820 460">
+<style>
+text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #1f2933; }
+.title { font-size: 22px; font-weight: 700; }
+.subtitle { font-size: 13px; fill: #5f6b7a; }
+.label { font-size: 12px; }
+.small { font-size: 11px; fill: #5f6b7a; }
+.axis { stroke: #1f2933; stroke-width: 1; }
+.grid { stroke: #d8dde6; stroke-width: 1; }
+</style>
+<text x="40.0" y="35.0" class="title" text-anchor="start">Appendix Figure A1. DeepSeek-generated real-code sanity check</text>
+<text x="40.0" y="58.0" class="subtitle" text-anchor="start">Three executable Python tasks, 12 model-generated candidates per task.</text>
+<line x1="90" y1="380" x2="780" y2="380" class="grid"/>
+<text x="78.0" y="384.0" class="small" text-anchor="end">0.00</text>
+<line x1="90" y1="305.0" x2="780" y2="305.0" class="grid"/>
+<text x="78.0" y="309.0" class="small" text-anchor="end">0.25</text>
+<line x1="90" y1="230.0" x2="780" y2="230.0" class="grid"/>
+<text x="78.0" y="234.0" class="small" text-anchor="end">0.50</text>
+<line x1="90" y1="155.0" x2="780" y2="155.0" class="grid"/>
+<text x="78.0" y="159.0" class="small" text-anchor="end">0.75</text>
+<line x1="90" y1="80.0" x2="780" y2="80.0" class="grid"/>
+<text x="78.0" y="84.0" class="small" text-anchor="end">1.00</text>
+<line x1="90" y1="80" x2="90" y2="380" class="axis"/>
+<line x1="90" y1="380" x2="780" y2="380" class="axis"/>
+<text x="18.0" y="230.0" class="small" text-anchor="middle">Rate</text>
+<rect x="134.0" y="380.0" width="117.5" height="0.0" fill="#c43b3b" rx="4"/>
+<text x="192.8" y="372.0" class="small" text-anchor="middle">0.000</text>
+<text x="192.8" y="405.0" class="small" text-anchor="middle">Raw hidden</text>
+<rect x="295.5" y="80.0" width="117.5" height="300.0" fill="#237a57" rx="4"/>
+<text x="354.2" y="72.0" class="small" text-anchor="middle">1.000</text>
+<text x="354.2" y="405.0" class="small" text-anchor="middle">Governed hidden</text>
+<rect x="457.0" y="80.0" width="117.5" height="300.0" fill="#d18b2c" rx="4"/>
+<text x="515.8" y="72.0" class="small" text-anchor="middle">1.000</text>
+<text x="515.8" y="405.0" class="small" text-anchor="middle">Raw hacking</text>
+<rect x="618.5" y="380.0" width="117.5" height="0.0" fill="#4f6fb5" rx="4"/>
+<text x="677.2" y="372.0" class="small" text-anchor="middle">0.000</text>
+<text x="677.2" y="405.0" class="small" text-anchor="middle">Governed hacking</text>
+</svg>

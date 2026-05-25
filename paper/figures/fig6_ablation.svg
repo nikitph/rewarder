@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+<style>
+text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #1f2933; }
+.title { font-size: 22px; font-weight: 700; }
+.subtitle { font-size: 13px; fill: #5f6b7a; }
+.label { font-size: 12px; }
+.small { font-size: 11px; fill: #5f6b7a; }
+.axis { stroke: #1f2933; stroke-width: 1; }
+.grid { stroke: #d8dde6; stroke-width: 1; }
+</style>
+<text x="40.0" y="35.0" class="title" text-anchor="start">Figure 6. Ablations identify the load-bearing checks</text>
+<text x="40.0" y="58.0" class="subtitle" text-anchor="start">Removing hard invariants increases hard violations; removing hidden or delayed evidence increases regressions.</text>
+<line x1="90" y1="420.0" x2="940" y2="420.0" class="grid"/>
+<text x="78.0" y="424.0" class="small" text-anchor="end">0.00</text>
+<line x1="90" y1="308.3333333333333" x2="940" y2="308.3333333333333" class="grid"/>
+<text x="78.0" y="312.3" class="small" text-anchor="end">0.05</text>
+<line x1="90" y1="196.66666666666663" x2="940" y2="196.66666666666663" class="grid"/>
+<text x="78.0" y="200.7" class="small" text-anchor="end">0.10</text>
+<line x1="90" y1="85.0" x2="940" y2="85.0" class="grid"/>
+<text x="78.0" y="89.0" class="small" text-anchor="end">0.15</text>
+<line x1="90" y1="85" x2="90" y2="420" class="axis"/>
+<line x1="90" y1="420" x2="940" y2="420" class="axis"/>
+<rect x="129.0" y="413.61266666666666" width="28" height="6.387333333333334" fill="#c43b3b" rx="3"/>
+<rect x="161.0" y="340.24766666666665" width="28" height="79.75233333333334" fill="#d18b2c" rx="3"/>
+<rect x="193.0" y="406.17566666666664" width="28" height="13.824333333333334" fill="#6d5aa8" rx="3"/>
+<text x="175.0" y="444.0" class="small" text-anchor="middle">full</text>
+<rect x="299.0" y="187.08566666666667" width="28" height="232.91433333333333" fill="#c43b3b" rx="3"/>
+<rect x="331.0" y="154.12166666666667" width="28" height="265.87833333333333" fill="#d18b2c" rx="3"/>
+<rect x="363.0" y="131.7883333333333" width="28" height="288.2116666666667" fill="#6d5aa8" rx="3"/>
+<text x="345.0" y="444.0" class="small" text-anchor="middle">no hard</text>
+<rect x="469.0" y="420.0" width="28" height="0.0" fill="#c43b3b" rx="3"/>
+<rect x="501.0" y="128.59466666666663" width="28" height="291.4053333333334" fill="#d18b2c" rx="3"/>
+<rect x="533.0" y="420.0" width="28" height="0.0" fill="#6d5aa8" rx="3"/>
+<text x="515.0" y="444.0" class="small" text-anchor="middle">no hidden</text>
+<rect x="639.0" y="420.0" width="28" height="0.0" fill="#c43b3b" rx="3"/>
+<rect x="671.0" y="122.22966666666667" width="28" height="297.7703333333333" fill="#d18b2c" rx="3"/>
+<rect x="703.0" y="420.0" width="28" height="0.0" fill="#6d5aa8" rx="3"/>
+<text x="685.0" y="444.0" class="small" text-anchor="middle">no delayed</text>
+<rect x="809.0" y="407.24766666666665" width="28" height="12.752333333333333" fill="#c43b3b" rx="3"/>
+<rect x="841.0" y="365.75233333333335" width="28" height="54.24766666666667" fill="#d18b2c" rx="3"/>
+<rect x="873.0" y="395.545" width="28" height="24.455" fill="#6d5aa8" rx="3"/>
+<text x="855.0" y="444.0" class="small" text-anchor="middle">no causal</text>
+<text x="750.0" y="96.0" class="small" text-anchor="start">hack</text>
+<rect x="710" y="86" width="24" height="10" fill="#c43b3b"/>
+<text x="750.0" y="116.0" class="small" text-anchor="start">regression</text>
+<rect x="710" y="106" width="24" height="10" fill="#d18b2c"/>
+<text x="750.0" y="136.0" class="small" text-anchor="start">hard violation</text>
+<rect x="710" y="126" width="24" height="10" fill="#6d5aa8"/>
+</svg>
